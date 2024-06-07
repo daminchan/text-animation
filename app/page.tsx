@@ -42,8 +42,6 @@ const Home = () => {
     typeText(fixedText, setAnimatedText);
   };
 
-  //メモリリークなどの可能性がある場合は、useEffectを使ってクリーンアップする
-  //現状の仕様だと、このコンポーネントがアンマウントされることないはずだから、コメントアウト
   // useEffect(() => {
   //   return () => {
   //     if (timeoutRef.current) {
